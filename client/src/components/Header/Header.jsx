@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Header.css";
 
 function Header() {
-  const [name, setName] = useState("Durgesh");
-  const [contactno, setContactno] = useState("7096938102");
+  const [name, setName] = useState("Denver");
+  const [contactno, setContactno] = useState("6432895178");
   return (
     <div className="header">
       <div className="header__name">

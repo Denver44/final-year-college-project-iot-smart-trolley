@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .login {
   display: flex;
   align-items: center;
@@ -7,14 +8,15 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-image: url("../../images/Sun-Tornado.svg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .login__center {
-  min-height: 550px;
+  min-height: 450px;
   background-color: white;
-  width: 390px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,15 +42,10 @@
   font-family: "Playfair Display", serif;
 }
 
-.form__field__select {
-  display: flex;
-  flex-direction: column;
-}
-
 .form__fields > input {
   height: 44px;
   color: rgb(75, 35, 84);
-  width: 280px;
+  width: 240px;
   padding-left: 23px;
   padding-right: 20px;
   border-radius: 25px;
@@ -59,38 +56,27 @@
   font-family: "Roboto", sans-serif;
 }
 
-.form__field__select {
-  margin-top: 15px;
-}
 .form_fieldtext {
   font-size: 12px;
 }
 
-.form__field__selectinputcart {
-  width: 80%;
-  margin-left: 20px;
-  margin-top: 5px;
-  margin-bottom: 25px;
-  height: 44px;
-  width: 280px;
-  outline: none;
-}
 .login__formbtn {
-  width: 175px;
+  width: 135px;
   height: 50px;
   border-radius: 25px;
   outline: none;
-  background-color: #bd59d4;
+  background-color: #2275e1;
   border: none;
   color: white;
   cursor: pointer;
+  margin-top: 25px;
   margin-bottom: 25px;
   font-size: 14px;
   font-weight: 800;
 }
 
 .login__formbtn:hover {
-  background-color: #4d2456;
+  background-color: #1b99bf;
 }
 
 .form_fieldtext {
