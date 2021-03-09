@@ -1,5 +1,5 @@
-# Smart Trolley Using RFID TECHNOLOGY Using MERN STACK.
+# IOT Based Smart Shopping Trolley Using RFID.
 
 ## Description
 
-This is a final year project.
+This is a final year project build using MERN STACK.
