@@ -1,53 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
 import { useHistory } from "react-router-dom";
+import { auth } from "../../firebase";
 
 function Login() {
   const history = useHistory();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const replacemeWithDashBoard = () => {
-    history.replace("/dashboard");
+  const sigIn = (e) => {
+    e.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        if (auth) {
+          history.push("/dashboard");
+        }
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+  const register = (e) => {
+    e.preventDefault();
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        if (auth) {
+          history.push("/dashboard");
+        }
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
   return (
     <div className="login">
       <div className="login__center">
-        <form
-          id="login-form"
-          action="registration/user_login.php"
-          method="post"
-          className="login__form"
-        >
-          <div className="login__text">
-            <h1>Welcome</h1>
-            <h2>Enter the details</h2>
-          </div>
+        <div className="login__heading">
+          <h1>Welcome</h1>
+          <h3>Enter the details</h3>
+        </div>
 
-          <div className="form__fields">
-            <input
-              className="form__field__inputname"
-              type="text"
-              name="full_name"
-              placeholder="Enter full name"
-            />
+        <form className="form">
+          <input
+            type="text"
+            value={email}
+            placeholder="Enter your mail-Id"
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-            <input
-              className="form__field__inputid"
-              type="text"
-              name="email"
-              placeholder="Enter email"
-            />
-
-            <input
-              className="form__field__inputnum"
-              type="number"
-              name="phone_number"
-              placeholder="Enter phone number"
-            />
-            <button onClick={replacemeWithDashBoard} className="login__formbtn">
-              Checkout
-            </button>
-          </div>
+          <input
+            type="password"
+            value={password}
+            placeholder="Enter your password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button onClick={sigIn} className="btn btn__SignIn">
+            Sign In
+          </button>
+          <button onClick={register} className="btn btn__SignUp">
+            Sign Up
+          </button>
         </form>
       </div>
     </div>

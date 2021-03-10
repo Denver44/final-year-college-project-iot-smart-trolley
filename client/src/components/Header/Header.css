@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #343a40;
   color: white;
@@ -8,7 +8,25 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 500;
   font-family: serif;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.header__leftName {
+  margin-left: 50px;
+}
+
+.header__right {
+  margin-right: 350px;
+}
+
+.backarrowIcon {
+  color: white !important;
+  text-decoration: none;
 }
