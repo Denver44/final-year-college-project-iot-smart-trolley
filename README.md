@@ -14,7 +14,7 @@
         7. 2 LED
         8. 4-5 RFID TAGS
 
-![ReactJs App](https://github.com/Denver44/IOT-Smart-Trolley-ESP8266/blob/main/image/SmartTrolleyBoard.PNG)
+![ReactJs App](https://raw.githubusercontent.com/Denver44/IOT-Smart-Trolley/main/doc/SmartTrolleyBoard.PNG)
 ![ReactJs App](https://raw.githubusercontent.com/Denver44/Smart-Trolley/main/screenshot/1.png)
 ![ReactJs App](https://raw.githubusercontent.com/Denver44/Smart-Trolley/main/screenshot/2.png)
 ![ReactJs App](https://raw.githubusercontent.com/Denver44/Smart-Trolley/main/screenshot/3.png)
