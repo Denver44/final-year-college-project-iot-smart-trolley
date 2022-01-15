@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "./Checkout.css";
-import Subtotal from "../subtotal/Subtotal";
-import CheckoutProduct from "../checkoutproduct/CheckoutProduct";
-import ad from "../../images/ad.png";
-import axios from "../../api/Axios.js";
+import React, { useState, useEffect } from 'react';
+import './Checkout.css';
+import Subtotal from '../subtotal/Subtotal';
+import CheckoutProduct from '../checkoutproduct/CheckoutProduct';
+import ad from '../../images/ad.png';
+import axios from '../../api/Axios.js';
 
 function Checkout() {
   let [basket, setbasket] = useState([]);
   const [total, setTotal] = useState(0);
   // useMemo Setup
   async function fetchData() {
-    const req = await axios.get("/cart");
+    const req = await axios.get('/cart');
     console.log(req.data);
     setbasket(req.data.rows);
     setTotal(req.data.totalprice);
@@ -20,7 +20,7 @@ function Checkout() {
     fetchData();
     setInterval(() => {
       fetchData();
-    }, 1000);
+    }, 5000);
   }, []);
 
   return (

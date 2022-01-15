@@ -1,8 +1,14 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
+  "name": "iot-smart-trolley",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Final year project, a smart shopping trolley which is build using React, a SQL Database which store user data & products of shopping complex, firebase is used for signing and logging of user and the logic part is written using node & express and the smart trolley device is build using c++",
+  "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.9",
@@ -21,27 +27,11 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "env-cmd  react-scripts start",
-    "build": "env-cmd  react-scripts build",
-    "test": "env-cmd  react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "server": "nodemon ./server/index.js",
+    "client": "npm start --prefix client",
+    "client:run": "npm start env-cmd react-scripts start --prefix client",
+    "client:build": "npm run build --prefix client",
+    "serve:client": "serve -s ./client/build",
+    "start": "npm run client && npm run server"
   }
 }
