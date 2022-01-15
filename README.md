@@ -15,8 +15,8 @@
         8. 4-5 RFID TAGS
 
 ![ReactJs App](https://raw.githubusercontent.com/Denver44/IOT-Smart-Trolley/main/doc/SmartTrolleyBoard.PNG)
-![ReactJs App](https://raw.githubusercontent.com/Denver44/Smart-Trolley/main/screenshot/1.png)
-![ReactJs App](https://raw.githubusercontent.com/Denver44/Smart-Trolley/main/screenshot/2.png)
-![ReactJs App](https://raw.githubusercontent.com/Denver44/Smart-Trolley/main/screenshot/3.png)
-![ReactJs App](https://raw.githubusercontent.com/Denver44/Smart-Trolley/main/screenshot/4.png)
-![ReactJs App](https://raw.githubusercontent.com/Denver44/Smart-Trolley/main/screenshot/5.png)
+![ReactJs App](https://raw.githubusercontent.com/Denver44/IOT-Smart-Trolley/main/doc/screenshot/picture-1.png)
+![ReactJs App](https://raw.githubusercontent.com/Denver44/IOT-Smart-Trolley/main/doc/screenshot/picture-2.png)
+![ReactJs App](https://raw.githubusercontent.com/Denver44/IOT-Smart-Trolley/main/doc/screenshot/picture-3.png)
+![ReactJs App](https://raw.githubusercontent.com/Denver44/IOT-Smart-Trolley/main/doc/screenshot/picture-4.png)
+![ReactJs App](https://raw.githubusercontent.com/Denver44/IOT-Smart-Trolley/main/doc/screenshot/picture-5.png)
