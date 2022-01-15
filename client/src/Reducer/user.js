@@ -1,10 +1,12 @@
-export default (state = { authData: null }, action) => {
+const user = (state = { authData: null }, action) => {
   switch (action.type) {
-    case "AUTH":
+    case 'AUTH':
       return { ...state, authData: action.data };
-    case "LOGOUT":
+    case 'LOGOUT':
       return { ...state, authData: null };
     default:
       return state;
   }
 };
+
+export default user;
